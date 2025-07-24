@@ -1,0 +1,288 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+  }
+  
+  button, input{
+    cursor: pointer;
+  }
+  .main {
+    background-image: url(bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 80vh;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  
+  .box {
+    background-color: black;
+    height: 80vh;
+    width: 100%;
+    opacity: 0.66;
+    position: absolute;
+    top: 0;
+  }
+  
+  nav {
+    max-width: 90vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+    padding: 10px;
+  }
+  
+  #log {
+    position: relative;
+    z-index: 10;
+  }
+  
+  .bt,
+  .bt1 {
+    color: white;
+    width: 90px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    position: relative;
+    z-index: 10;
+  }
+  
+  .bt {
+    background-color: rgba(0, 0, 0, 0.537);
+  }
+  
+  .bt1 {
+    background-color: red;
+  }
+  
+  .hero {
+    height: 89%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: relative;
+    text-align: center;
+    padding: 0 20px;
+    z-index: 10;
+  }
+  
+  #s1,
+  #s2 {
+    font-size: 70px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  #s3,
+  #s4 {
+    font-size: 30px;
+    margin-top: 10px;
+  }
+  
+  .inp {
+    display: flex;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  #email {
+    color: white;
+    width: 300px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.629);
+    padding: 10px;
+    border: 0.7px solid white;
+    border-radius: 7px;
+  }
+  
+  #started {
+    color: white;
+    background-color: red;
+    width: 150px;
+    font-size: 20px;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    height: 40px;
+  }
+  
+  .sepration {
+    background-color: gray;
+    height: 10px;
+  }
+  
+  .c1,
+  .c2 {
+    height: auto;
+    padding: 30px 20px;
+  }
+  
+  .names {
+    padding: 30px 10px;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+  }
+  
+  .contenor1,
+  .contenor2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px 0;
+    
+    
+  }
+
+  .movie11,
+  .movie12,
+  .movie13,
+  .movie14,
+  .movie21,
+  .movie22,
+  .movie23,
+  .movie24 {
+    background-color: aliceblue;
+    height: 250px;
+    width: 180px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .movie11:hover,
+  .movie12:hover,
+  .movie13:hover,
+  .movie14:hover,
+  .movie21:hover,
+  .movie22:hover,
+  .movie23:hover,
+  .movie24:hover{
+    transform: scale(1.05); /* Slight zoom */
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.6); /* Glow effect */
+
+  }
+  
+  /* Background images */
+  .movie11 {
+    background-image: url('https://m.media-amazon.com/images/M/MV5BNGI4YWY1ODYtYWY3Ny00MzljLWJjOTctYWM2MDBhYWZmMWMyXkEyXkFqcGc@._V1_.jpg');
+  }
+  .movie12 {
+    background-image: url('https://timesofindia.indiatimes.com/photo/91940762.cms');
+  }
+  .movie13 {
+    background-image: url('https://upload.wikimedia.org/wikipedia/en/thumb/c/c5/Premalu_film_poster.jpg/250px-Premalu_film_poster.jpg');
+  }
+  .movie14 {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_sLd07E06JE8fiYCMOaqhgtOx9k5kWCgxmQ&s');
+  }
+  .movie21 {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPvW-4qYxRgpmhaoIV05t-PSYy5_BUymyr5w&s');
+  }
+  .movie22 {
+    background-image: url('https://m.media-amazon.com/images/M/MV5BZjliODY5MzQtMmViZC00MTZmLWFhMWMtMjMwM2I3OGY1MTRiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg');
+  }
+  .movie23 {
+    background-image: url('https://upload.wikimedia.org/wikipedia/en/9/90/One_Piece%2C_Volume_61_Cover_%28Japanese%29.jpg');
+  }
+  .movie24 {
+    background-image: url('https://play-lh.googleusercontent.com/TNLEWYQuWBcAMT2gS0HqSm2XVMNhbA2DyRI5WP8qgonoQH22r5u6w50ZHvXIkZDvdw=w240-h480-rw');
+  }
+  
+  
+  @media screen and (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    #s1,
+    #s2 {
+      font-size: 40px;
+    }
+  
+    #s3,
+    #s4 {
+      font-size: 18px;
+      text-align: center;
+    }
+  
+    .inp {
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+    }
+  
+    #email,
+    #started {
+      width: 90%;
+      font-size: 16px;
+    }
+  
+    .movie11,
+    .movie12,
+    .movie13,
+    .movie14,
+    .movie21,
+    .movie22,
+    .movie23,
+    .movie24 {
+      width: 90%;
+      height: 200px;
+    }
+  
+    .names {
+      font-size: 22px;
+    }
+  }
+  .last{
+   height: 10vh;
+   max-width: 80%;
+   margin: auto;
+   display: flex;
+   align-items: flex-end;   
+  padding-bottom: 10px;
+  font-size: 30px;
+  }
+  .contenorend{
+  display: flex;
+  flex-direction: column;  
+  gap: 10px;                 
+  align-items: center;      
+  padding: 20px 0; 
+  }
+.boxend1{
+  background-color: gray;
+  height: 80px;
+  width: 80%;               
+  transition: transform 0.35 ease, box-shadow 0.35 ease;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  padding-left: 20px;
+}
+.boxend1:hover{
+  transform: scale(1.05);
+  box-shadow: rgb(224, 180, 49);
+}
+.empty{
+  height: 20vh;
+}
